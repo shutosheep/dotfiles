@@ -1,0 +1,25 @@
+# Prevent auto correcting and use alises with sudo
+alias sudo="nocorrect sudo "
+
+# Verbose and confirm when removing or overwriting files
+alias \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -vI" \
+    mkd="mkdir -pv"
+
+# Colorful output
+alias \
+    ls="ls --color=auto --group-directories-first" \
+    grep="grep --color=auto" \
+    diff="diff --color=auto" \
+    ip="ip --color=auto"
+
+# Shorten long commands
+alias \
+    g="git" \
+    p="pacman" \
+    v="nvim" \
+    z="zathura" \
+    yt="yt-dlp" \
+    yta="yt -x --audio-format mp3"
