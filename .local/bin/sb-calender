@@ -1,0 +1,7 @@
+#! /bin/sh
+
+icon="📅"
+
+date=$(date "+%Y %h %d (%a)")
+
+echo "$icon $date"

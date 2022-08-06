@@ -1,0 +1,11 @@
+#! /bin/sh
+
+ssid="$(iwgetid -r)"
+icon="📡"
+
+if [[ -z $ssid ]]; then
+    echo "$icon Not connected!"
+else
+    echo "$icon $ssid"
+fi
+

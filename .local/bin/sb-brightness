@@ -1,0 +1,6 @@
+#! /bin/sh
+
+icon="🌞"
+brightness=$(brightnessctl i | grep Current | awk -F " " '{print $4}' | sed 's/[()%]//g')
+
+echo "$icon $brightness%"

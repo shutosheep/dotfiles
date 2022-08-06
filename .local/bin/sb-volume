@@ -1,0 +1,22 @@
+#! /bin/sh
+
+mute="$(pamixer --get-mute)"
+vol="$(pamixer --get-volume)"
+
+if [ "$mute" = "true" ]; then
+    icon="🔇"
+    echo "$icon ($vol%)"
+    exit 0
+fi
+
+if [ "$vol" -ge "60" ]; then
+    icon="🔊"
+elif [ "$vol" -ge "30" ]; then
+    icon="🔉"
+elif [ "$vol" -ge "0" ]; then
+    icon="🔈"
+else
+    icon="🔇"
+fi
+
+echo "$icon $vol%"

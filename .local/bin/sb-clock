@@ -1,0 +1,31 @@
+#! /bin/sh
+
+. "${HOME}/.cache/wal/colors.sh"
+
+clock=$(date '+%I')
+current=$(date "+%I%M")
+
+case "$clock" in
+        "00") icon="🕛" ;;
+        "01") icon="🕐" ;;
+        "02") icon="🕑" ;;
+        "03") icon="🕒" ;;
+        "04") icon="🕓" ;;
+        "05") icon="🕔" ;;
+        "06") icon="🕕" ;;
+        "07") icon="🕖" ;;
+        "08") icon="🕗" ;;
+        "09") icon="🕘" ;;
+        "10") icon="🕙" ;;
+        "11") icon="🕚" ;;
+        "12") icon="🕛" ;;
+esac
+
+time=$(date "+%I:%M:%S %p")
+
+echo "$icon $time"
+
+if [ $current -ge "2245" ] &&
+    [ $current -le "2359" ]; then
+    dunstify -h string:bgcolor:$color0 -h string:fgcolor:$color15 -h string:frcolor:$color2 -h string:hlcolor:$color2 -t 5000 -r 31 "😪 It's bedtime!"
+fi
