@@ -15,7 +15,6 @@ set clipboard+=unnamedplus
 set nohlsearch
 set ignorecase
 set noshowcmd
-set noshowmode
 set laststatus=0
 colorscheme wal " pywal colorscheme
 
