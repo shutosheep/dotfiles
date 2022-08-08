@@ -6,9 +6,8 @@
 
 wallpaper=$(sxiv -to ~/pix/wp/*)
 
-if [ -z $wallpaper ]; then
-    exit 0
-fi
+# Exit if none chosen
+[ -z "$wallpaper" ] && exit
 
 cp $wallpaper ~/pix/wallpaper
 

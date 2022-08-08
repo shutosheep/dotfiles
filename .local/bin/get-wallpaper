@@ -10,10 +10,8 @@ walldir="$HOME/pix/dl"
 
 query=$(echo "" | dmenu -p "Search wallhaven: ")
 
-# Quit if query is empty
-if [ -z "$query" ]; then
-    exit 0
-fi
+# Exit if none chosen
+[ -z "$query" ] && exit
 
 sortoptions="date_added\nrelevance\nrandom\nviews\nfavorites\ntoplist"
 sorting=$(echo -e $sortoptions | dmenu -p "Sort by: ")
