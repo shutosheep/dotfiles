@@ -4,7 +4,6 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
-Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
@@ -16,7 +15,6 @@ set nohlsearch
 set ignorecase
 set noshowcmd
 set laststatus=0
-colorscheme wal " pywal colorscheme
 
 " Basics
 set nocompatible
