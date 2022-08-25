@@ -5,6 +5,7 @@ do
         "w")
             xwallpaper --zoom "$file";;
         "d")
+            [ "$(echo -e "No\nYes" | dmenu -i -p "Are you sure you want to delete $file?")" = "Yes" ] &&
             rm "$file";;
     esac
 done
