@@ -19,6 +19,6 @@ case "$clock" in
         "12") icon="🕛" ;;
 esac
 
-time=$(date "+%I:%M:%S %p")
+time=$(date "+%I:%M %p")
 
 echo "$icon $time"
