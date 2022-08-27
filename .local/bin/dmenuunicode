@@ -1,12 +1,9 @@
 #! /bin/sh
 
-# Import pywal colors
-. "${HOME}/.cache/wal/colors.sh"
-
 chosen=$(cut -d ';' -f1 ~/.local/share/chars/* | dmenu -i -l 15 | sed "s/ .*//")
 
 # Exit if none chosen
 [ -z $chosen ] && exit
 
 printf "$chosen" | xclip -selection clipboard
-dunstify -h string:bgcolor:$color0 -h string:fgcolor:$color15 -h string:frcolor:$color2 -t 5000 "$chosen copied to clipboard"
+dunstify -t 5000 "$chosen copied to clipboard"
