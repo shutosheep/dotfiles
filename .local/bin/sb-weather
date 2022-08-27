@@ -1,0 +1,4 @@
+#! /bin/sh
+
+curl -sf "wttr.in/?format=%c%t+☔+%p\n" > ~/.cache/weather
+sed "s/  / /g" ~/.cache/weather
