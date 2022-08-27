@@ -4,8 +4,8 @@ ssid="$(iwgetid -r)"
 icon="📡"
 
 if [[ -z $ssid ]]; then
-    echo "$icon Not connected!"
+    echo "$icon ?"
 else
-    echo "$icon $ssid"
+    echo "$icon Ok"
 fi
 
