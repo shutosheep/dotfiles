@@ -3,6 +3,7 @@ set shellopts '-eu'
 set scrolloff 10
 set period 1
 set drawbox on
+set icons on
 
 # File preview with ctpv
 set previewer ctpv
