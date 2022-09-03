@@ -1,0 +1,11 @@
+# Basics
+set shellopts '-eu'
+set scrolloff 10
+set period 1
+set drawbox on
+
+# File preview with ctpv
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
