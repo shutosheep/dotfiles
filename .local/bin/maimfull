@@ -1,0 +1,4 @@
+#! /bin/sh
+
+filename="$HOME/pix/screenshots/$(date +%s).png"
+maim $filename && dunstify "📸 Screenshot captured" "Saved at $filename"

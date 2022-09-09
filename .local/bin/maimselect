@@ -1,0 +1,9 @@
+#! /bin/sh
+
+filename="$HOME/pix/screenshots/$(date +%s).png"
+maim -s $filename
+if [ -e $filename ]; then
+    dunstify "📸 Screenshot captured" "Saved at $filename"
+else
+    dunstify "❗ Screenshot not captured" "Selection was cancelled by keystroke or right-click"
+fi
