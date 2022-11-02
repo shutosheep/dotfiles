@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
