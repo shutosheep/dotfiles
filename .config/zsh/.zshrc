@@ -15,7 +15,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots) # include hidden files for completion
+# _comp_options+=(globdots) # include hidden files for completion
 
 # vi mode
 bindkey -v
