@@ -1,0 +1,52 @@
+# App
+
+super + w
+    $BROWSER
+
+super + r
+    $TERMINAL -e lf
+
+super + e
+    $TERMINAL -e neomutt
+
+super + m
+    $TERMINAL -e ncmpcpp
+
+super + n
+    $TERMINAL -e newsboat
+
+# Volume
+
+XF86AudioRaiseVolume
+    pamixer -i 5; \
+    pkill -RTMIN+1 dwmblocks;
+
+XF86AudioLowerVolume
+    pamixer -d 5; \
+    pkill -RTMIN+1 dwmblocks;
+
+XF86AudioMute
+    pamixer -t; \
+    pkill -RTMIN+1 dwmblocks;
+
+# Music
+
+XF86AudioPlay
+    mpc toggle
+
+XF86AudioNext
+    mpc next
+
+XF86AudioPrev
+    mpc prev
+
+# Utility
+
+super + u
+    dmenuunicode
+
+super + Print
+    maimfull
+
+super + shift + Print
+    maimselect
