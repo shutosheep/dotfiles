@@ -44,3 +44,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Fish like autosuggestions
 # https://github.com/zsh-users/zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Notify to use aliases for the command
+# https://github.com/MichaelAquilina/zsh-you-should-use
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
