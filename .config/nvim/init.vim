@@ -31,3 +31,14 @@ set wildmode=longest,list,full
 
 " Tabs
 set tabstop=4 shiftwidth=4 expandtab smarttab autoindent
+
+function! s:goyo_enter()
+    set linebreak
+endfunction
+
+function! s:goyo_leave()
+    set nolinebreak
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
