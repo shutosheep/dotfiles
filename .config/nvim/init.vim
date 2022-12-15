@@ -5,6 +5,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'vimwiki/vimwiki'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
