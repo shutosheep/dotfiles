@@ -2,6 +2,15 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+# Display vcs info with rprompt
+autoload -U add-zsh-hook vcs_info
+add-zsh-hook precmd vcs_info # Run vsc_info before prompt is displayed
+setopt promptsubst
+RPROMPT='${vcs_info_msg_0_}'
+
+# vcs prompt format
+zstyle ':vcs_info:*' formats '(%s)-[%b]'
+
 # History in cache directory
 export HISTSIZE=1000000
 export SAVEHIST=1000000
