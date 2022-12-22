@@ -10,7 +10,7 @@ export XMODIFIERS=”@im=fcitx”
 export EDITOR="nvim"
 export TERMINAL="st"
 export PAGER="less"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export READER="zathura"
 export IMAGE="sxiv"
 export VIDEO="mpv"
