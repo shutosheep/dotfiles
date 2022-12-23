@@ -29,6 +29,15 @@ XF86AudioMute
     pamixer -t; \
     pkill -RTMIN+1 dwmblocks;
 
+# Backlight
+XF86MonBrightnessUp
+    brightnessctl set +10%; \
+    pkill -RTMIN+2 dwmblocks;
+
+XF86MonBrightnessDown
+    brightnessctl set 10%-; \
+    pkill -RTMIN+2 dwmblocks;
+
 # Music
 
 XF86AudioPlay
