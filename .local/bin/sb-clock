@@ -1,9 +1,6 @@
 #! /bin/sh
 
-clock=$(date '+%I')
-current=$(date "+%I%M")
-
-case "$clock" in
+case "$(date +%I)" in
         "00") icon="🕛" ;;
         "01") icon="🕐" ;;
         "02") icon="🕑" ;;
