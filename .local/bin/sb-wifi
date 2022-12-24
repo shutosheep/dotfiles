@@ -6,6 +6,6 @@ icon="📡"
 if [[ -z $ssid ]]; then
     echo "$icon ?"
 else
-    echo "$icon Ok"
+    echo "$icon $ssid"
 fi
 
