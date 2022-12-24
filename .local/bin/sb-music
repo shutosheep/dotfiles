@@ -1,6 +1,6 @@
 #! /bin/sh
 
-music=$(mpc status | grep playing > /dev/null && mpc current -f "%title% - %artist%")
+music=$(mpc status | grep -q playing && mpc current -f "%title% - %artist%")
 
 # Display "Paused" if music is not playing
 [[ -z $music ]] && echo "🎹 Paused" && exit
