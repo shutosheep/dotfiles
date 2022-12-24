@@ -1,5 +1,0 @@
-#! /bin/sh
-
-weather="${XDG_CACHE_HOME:-$HOME/.cache}/weather"
-curl -sf "wttr.in/?format=%c%t+☔+%p\n" > "$weather"
-sed "s/  / /g" $weather
