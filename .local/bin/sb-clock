@@ -1,21 +1,23 @@
 #! /bin/sh
 
 case "$(date +%I)" in
-        "00") icon="🕛" ;;
-        "01") icon="🕐" ;;
-        "02") icon="🕑" ;;
-        "03") icon="🕒" ;;
-        "04") icon="🕓" ;;
-        "05") icon="🕔" ;;
-        "06") icon="🕕" ;;
-        "07") icon="🕖" ;;
-        "08") icon="🕗" ;;
-        "09") icon="🕘" ;;
-        "10") icon="🕙" ;;
-        "11") icon="🕚" ;;
-        "12") icon="🕛" ;;
+        "00") clock="🕛" ;;
+        "01") clock="🕐" ;;
+        "02") clock="🕑" ;;
+        "03") clock="🕒" ;;
+        "04") clock="🕓" ;;
+        "05") clock="🕔" ;;
+        "06") clock="🕕" ;;
+        "07") clock="🕖" ;;
+        "08") clock="🕗" ;;
+        "09") clock="🕘" ;;
+        "10") clock="🕙" ;;
+        "11") clock="🕚" ;;
+        "12") clock="🕛" ;;
 esac
 
-time=$(date "+%a %I:%M %h %d")
+calender="🗓"
 
-echo "$icon $time"
+time=$(date "+$calender %h %d %a $clock %I:%M %p")
+
+echo "$time"
