@@ -1,5 +1,5 @@
 auto-reload yes
-browser firefox
+browser "`echo $BROWSER`"
 
 bind-key j down
 bind-key k up
