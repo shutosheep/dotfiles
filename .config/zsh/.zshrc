@@ -15,6 +15,7 @@ zstyle ':vcs_info:*' formats '(%s)-[%b]'
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 export HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/history"
+[ -f "$HISTFILE" ] || touch "$HISTFILE"
 
 # Source alias if aliasrc exists
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
